@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Animal Sightings</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        #map, body, html {
+            height: 90%;
+        }
+
+        td {
+            padding: 2px
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="filters" style="padding:2rem">
+        <h1>Filters</h1>
+        <table>
+            <tr>
+                <td>Search:</td>
+                <td>
+                    <input type="text" id="search" class="buttons" />
+                </td>
+            </tr>
+            <tr>
+                <td>Genus:</td>
+                <td>
+                    <select id="genus" class="buttons">
+                        <option></option>
+                        <option>Cats</option>
+                        <option>Elephant</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Observed Date:</td>
+                <td>
+                    <input type="date" id="date_from" value="2023-04-01" class="buttons" />
+                    <input type="date" id="date_to" />
+                </td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <select id="countries" class="buttons"></select>
+                </td>
+            </tr>
+            <tr><td><button id="btnFilter">Filter</button></td></tr>
+        </table>
+    </div>
+    <script src="icons.js"></script>
+    <script src="app.js"></script>
+</html>
