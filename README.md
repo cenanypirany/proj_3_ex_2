@@ -8,3 +8,5 @@ App that uses Leaflet JS, Python Flask + Postgres to visualize animal sightings 
 - Open a terminal and run `python server.py`
 - Open another terminal, navigate into the `client` folder run `python -m http.server`
 - Using a web browser navigate to `localhost:8000`
+
+# Hi class
